@@ -1,2 +1,26 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="docs">
+  <h1 class="docs__title">API Documentation</h1>
+
+  <h2 class="docs__route">GET /api/v1/tables</h2>
+
+  <p class="docs__description">Devuelve la tabla de posiciones actualizada.</p>
+
+  <h3 class="docs__response">Response</h3>
+
+  <p class="docs__description">Devuelve un JSON con la tabla del campeonato chileno actualizada. Cada objeto contiene los siguientes campos:</p>
+
+  <ul class="docs__list">
+    <li><code class="docs__field">position</code>: Posición del equipo.</li>
+    <li><code class="docs__field">club</code>: Equipo.</li>
+    <li><code class="docs__field">points</code>: Puntos.</li>
+    <li><code class="docs__field">played</code>: Partidos jugados.</li>
+    <li><code class="docs__field">won</code>: Partidos ganados.</li>
+    <li><code class="docs__field">drawn</code>: Partidos empatados.</li>
+    <li><code class="docs__field">lost</code>: Partidos perdidos.</li>
+    <li><code class="docs__field">gf</code>: Goles a favor.</li>
+    <li><code class="docs__field">ga</code>: Goles en contra.</li>
+    <li><code class="docs__field">gd</code>: Diferencia de goles.</li>
+  </ul>
+
+  <%= link_to "Ir a ver tabla actualizada", api_v1_tables_path %>
+</div>

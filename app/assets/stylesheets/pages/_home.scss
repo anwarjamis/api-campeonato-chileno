@@ -1,1 +1,26 @@
 // Specific CSS for your home-page
+body {
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  margin-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
