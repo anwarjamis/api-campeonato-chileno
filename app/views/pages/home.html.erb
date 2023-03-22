@@ -1,14 +1,15 @@
 <div class="docs">
-  <h1 class="docs__title">API Documentation</h1>
+  <h1 class="docs__title">API Campeonato Chileno ⚽️🇨🇱</h1>
+  <p class="docs__description">Esta API proporciona información sobre la tabla de posiciones actual del fútbol chileno, incluyendo detalles sobre los equipos y su posición en la tabla después de cada partido.</p>
 
-  <h2 class="docs__route">GET /api/v1/tables</h2>
+  <h2 class="docs__response">URL Base</h2>
+  <p class="docs__description">La URL base de la API es la siguiente:</p>
+  <code class="docs__field">https://api-campeonato-chileno.fly.dev</code>
 
-  <p class="docs__description">Devuelve la tabla de posiciones actualizada.</p>
+  <h2 class="docs__response">Tabla de posiciones actual</h2>
+  <code class="docs__field">GET /api/v1/tables</code>
 
-  <h3 class="docs__response">Response</h3>
-
-  <p class="docs__description">Devuelve un JSON con la tabla del campeonato chileno actualizada. Cada objeto contiene los siguientes campos:</p>
-
+  <p class="docs__description mt-3">Este endpoint devuelve la tabla de posiciones actual del fútbol chileno, ordenada por puntos en orden descendente. La respuesta incluye los siguientes campos para cada equipo:</p>
   <ul class="docs__list">
     <li><code class="docs__field">position</code>: Posición del equipo.</li>
     <li><code class="docs__field">club</code>: Equipo.</li>
@@ -21,6 +22,6 @@
     <li><code class="docs__field">ga</code>: Goles en contra.</li>
     <li><code class="docs__field">gd</code>: Diferencia de goles.</li>
   </ul>
-
-  <%= link_to "Ir a ver tabla actualizada", api_v1_tables_path %>
+  <hr>
+  <%= link_to "Ir a ver tabla actualizada", api_v1_tables_path, class: "btn btn-primary" %>
 </div>
